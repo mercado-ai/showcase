@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --white: #fff;
+  --base-color-1: #001524;
+  --base-color-2: #E0E1DD;
+
+  /* --accent-color-1: #5041A1; */
+  --accent-color-1: #764afc;
+  --accent-color-2: #443789;
+  --accent-color-3: #ab9cc6;
+  --accent-color-4: #CF6BBF;
+
+  --base-margin-1: 20px;
+
+  --base-padding-1: 4rem;
+  --base-padding-2: calc(var(--base-padding-1) * 1.8);
+
+  --base-line-height-1: 2rem;
+
+  --base-anim-speed-1: 384ms;
+}
+
+/* Layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: var(--base-line-height-1);
+}
+
+h2, p {
+  margin-bottom: var(--base-margin-1);
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: var(--accent-color-1);
+  }
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* .mc-main {
+  /* XXX: Set up variables for these... */
+  /* margin: 0 calc(0.03125 * 100vw);
+} */
+
+.mc-base-color-1 {
+  color: var(--base-color-1);
+  fill: var(--base-color-1);
+}
+
+.mc-base-color-2 {
+  color: var(--base-color-2);
+  fill: var(--base-color-2);
+}
+
+.mc-accent-color-1 {
+  color: var(--accent-color-1);
+  fill: var(--accent-color-1);
+}
+
+.mc-accent-color-2 {
+  color: var(--accent-color-2);
+  fill: var(--accent-color-2);
+}
+
+.mc-accent-color-3 {
+  color: var(--accent-color-3);
+  fill: var(--accent-color-3);
+}
+
+.mc-accent-color-4 {
+  color: var(--accent-color-4);
+  fill: var(--accent-color-4);
+}
+
+.mc-theme-transition {
+  transition: background var(--base-anim-speed-1), color var(--base-anim-speed-1);
+}
+
+.mc-theme-1 {
+  background: var(--base-color-1);
+  color: var(--base-color-2);
+
+  .mc-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+.mc-theme-2 {
+  background: var(--white);
+  color: var(--base-color-1);
+
+  #mercado-logo-text-tmpl {
+    .mc-base-color-1 {
+      fill: var(--white);
+    }
+
+    .mc-base-color-2 {
+      fill: var(--base-color-1);
+    }
+  }
+
+  #mercado-logo-brandmark-tmpl {
+    .mc-base-color-1 {
+      fill: var(--white);
+    }
+
+    .mc-base-color-2 {
+      fill: var(--base-color-1);
+    }
+  }
+
+  .mc-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
+.mc-icon-tmpl {
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.mc-icon {
+  display: inline-block;
+  pointer-events: auto;
+}
+
+.mc-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mc-col {
+  flex: 1;
+}
+
+.mc-group {
+  margin-bottom: var(--base-margin-1);
+}
+
+.mc-section {
+  padding: 0 var(--base-padding-1);
+
+  &.mc-visible {
+    .mc-article {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.mc-article {
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: opacity var(--base-anim-speed-1), transform var(--base-anim-speed-1);
+}
+
+.mc-masthead {
+  padding: var(--base-padding-1);
+  min-height: 100vh;
+
+  #mercado-logo-text {
+    width: 200px;
+    height: 80px;
+  }
+
+  .mc-thesis {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 6.5rem;
+  }
+
+  .mc-purpose p {
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 700;
+  }
+}
+
+.mc-main {
+  /* color: var(--base-color-2); */
+  /* padding: 0 var(--base-padding-1); */
+}
+
+.mc-footer {
+  padding: var(--base-padding-1);
+
+  #mercado-logo-brandmark {
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+  }
+
+  .mc-col {
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 2.8rem;
+    padding: var(--base-padding-2) 0;
+  }
+
+  .mc-title {
+    margin-bottom: var(--base-margin-1);
+  }
+
+  p, a {
+    opacity: 0.5;
+  }
+}
+
+
+#mercado-logo-text-tmpl {
+  path {
+    transition: fill var(1000ms);
+  }
+}
+
+#mercado-logo-brandmark-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+}
+
+/* XXX-START-EXPERIMENT - just an experiment */
+.mc-theme-2 #mercado-logo-brandmark-tmpl .mc-accent-color-2 {
+  fill: var(--base-color-1);
+  fill: var(--white);
+}
+/* XXX-END-EXPERIMENT - just an experiment */
+
+/* XXX-START-TO-DELETE - mercado-logo-text - minor design tweaks for now */
+#mercado-logo-text-tmpl {
+  .mc-accent-color-3 {
+    display: none;
+  }
+
+  .mc-o-outer, .mc-o-inner, .mc-i-bar {
+    transform: scaleX(0.65) scaleY(0.65) translateX(200px) translateY(60px);
+  }
+}
+
+.mc-masthead {
+  #mercado-logo-text {
+    position: relative;
+    left: -22px;
+  }
+}
+/* XXX-END-TO-DELETE - mercado-logo-text - minor design tweaks for now */
