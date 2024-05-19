@@ -204,6 +204,432 @@ p, a {
   pointer-events: auto;
 }
 
+#mercado-logo-text-tmpl {
+  path {
+    transition: fill var(1000ms);
+  }
+}
+
+#mercado-logo-brandmark-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+}
+
+#ami-accounting-logo-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+
+  .ami-mountain-outer {
+    fill: var(--base-color-1);
+    /* fill: #2cb674; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-1 {
+    fill: var(--base-color-1);
+    /* fill: #3db47d; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-2 {
+    fill: var(--base-color-1);
+    /* fill: #5ebd94; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-3 {
+    fill: var(--base-color-1);
+    /* fill: #35b67a; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-4 {
+    fill: var(--base-color-1);
+    /* fill: #69be98; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-5 {
+    fill: var(--base-color-1);
+    /* fill: #38b67b; */
+    opacity: 0.5;
+  }
+
+  .ami-mountain-inner-line-6 {
+    fill: var(--base-color-1);
+    /* fill: #38b77a; */
+    opacity: 0.5;
+  }
+
+  .ami-letter-1 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-1-stroke {
+    fill: var(--base-color-1);
+  }
+
+  .ami-letter-2 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-3 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-4 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-5 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-6 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-7 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-8 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-9 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-10 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-11 {
+    fill: var(--base-color-1);
+    /* fill: #363636; */
+  }
+
+  .ami-letter-12 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-letter-13 {
+    fill: var(--base-color-1);
+    /* fill: #373737; */
+  }
+
+  .ami-asterick {
+    fill: var(--base-color-1);
+    /* fill: #34b476; */
+    opacity: 0.5;
+  }
+
+  .ami-letter-14 {
+    fill: var(--base-color-1);
+    /* fill: #3cb47d; */
+  }
+
+  .ami-letter-15 {
+    fill: var(--base-color-1);
+    /* fill: #3ab67a; */
+  }
+
+  .ami-letter-16 {
+    fill: var(--base-color-1);
+    /* fill: #39b57b; */
+  }
+
+  .ami-letter-17 {
+    fill: var(--base-color-1);
+    /* fill: #3ab47a; */
+  }
+
+  .ami-letter-18 {
+    fill: var(--base-color-1);
+    /* fill: #37b97b; */
+  }
+
+  .ami-letter-18-stroke {
+    fill: var(--base-color-1);
+    /* fill: #9ad8bc; */
+  }
+
+  .ami-letter-19 {
+    fill: var(--base-color-1);
+    /* fill: #3bb47c; */
+  }
+
+  .ami-letter-20 {
+    fill: var(--base-color-1);
+    /* fill: #37b67a; */
+  }
+
+  .ami-letter-21 {
+    fill: var(--base-color-1);
+    /* fill: #3cb37c; */
+  }
+}
+
+#ev-plus-logo-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+
+  .ev-text {
+    fill: #6ba539;
+    fill: var(--base-color-1);
+  }
+
+  .ev-plus-green {
+    fill: #6ba539;
+    fill: var(--base-color-1);
+  }
+
+  .ev-plus-grey {
+    fill: #707372;
+    fill: var(--base-color-1);
+    opacity: 0.5;
+  }
+}
+
+#fareconnect-logo-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+
+  .fc-boat {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-palm-tree-leaf-1 {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-palm-tree-leaf-2 {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-ripple-1 {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-ripple-2 {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-ripple-3 {
+    fill: var(--base-color-1);
+    /* fill: #0f86be; */
+    opacity: 0.5;
+  }
+
+  .fc-letter-1 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-2 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-3 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-4 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-5 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-6 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-7 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-8 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-9 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-10 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+
+  .fc-letter-11 {
+    fill: var(--base-color-1);
+    /* fill: #063755 */
+  }
+}
+
+#sparrow-cowork-logo-tmpl {
+  path {
+    transition: fill var(--base-anim-speed-1);
+  }
+
+  .sc-bird {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+    opacity: 0.5;
+  }
+
+  .sc-bird-wing-flap-1 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-bird-wing-flap-2 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-bird-wing-flap-3 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-1 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-2 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-3 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-4 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-5 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-6 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-7 {
+    fill: var(--base-color-1);
+    /* fill: #96938d; */
+  }
+
+  .sc-letter-8 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-9 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-10 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-11 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-12 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+
+  .sc-letter-13 {
+    fill: var(--base-color-1);
+    /* fill: #c7b82e; */
+    opacity: 0.5;
+  }
+}
+
+#ami-accounting-logo {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+
+#ev-plus-logo {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+
+#fareconnect-logo {
+  width: 200px;
+  height: 100px;
+}
+
+#sparrow-cowork-logo {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+}
+
 .mc-row {
   display: flex;
   flex-wrap: wrap;
@@ -211,6 +637,10 @@ p, a {
 
 .mc-col {
   flex: 1;
+
+  .mc-icon {
+    max-width: 100%;
+  }
 }
 
 .mc-group {
@@ -300,19 +730,6 @@ p, a {
 
   .mc-title {
     margin-bottom: var(--base-margin-1);
-  }
-}
-
-
-#mercado-logo-text-tmpl {
-  path {
-    transition: fill var(1000ms);
-  }
-}
-
-#mercado-logo-brandmark-tmpl {
-  path {
-    transition: fill var(--base-anim-speed-1);
   }
 }
 
