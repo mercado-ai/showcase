@@ -67,6 +67,13 @@ table {
   --base-padding-1: 4rem;
   --base-padding-2: calc(var(--base-padding-1) * 1.8);
 
+  --base-font-size-m: 1.1rem;
+  --base-font-size-xl: 4rem;
+  --base-font-size-xxl: 6rem;
+
+  --base-line-height-multiplier-1: 1.3;
+  --base-line-height-multiplier-2: 2.6;
+
   --base-line-height-1: 2rem;
 
   --base-anim-speed-1: 384ms;
@@ -86,10 +93,6 @@ h2, p {
   margin-bottom: var(--base-margin-1);
 }
 
-p {
-  font-size: 1.2rem;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -99,13 +102,12 @@ a {
   }
 }
 
-h2 {
-  font-size: 3.2rem;
-  line-height: 4rem;
-}
-
 p:last-child {
   margin-bottom: 0;
+}
+
+p, a {
+  opacity: 0.5;
 }
 
 /* .mc-main {
@@ -210,7 +212,8 @@ p:last-child {
 }
 
 .mc-section {
-  padding: 0 var(--base-padding-1);
+  padding: var(--base-padding-1);
+  min-height: 70vh;
 
   &.mc-visible {
     .mc-article {
@@ -237,15 +240,32 @@ p:last-child {
   }
 
   .mc-thesis {
-    font-size: 5rem;
+    font-size: var(--base-font-size-xxl);
     font-weight: 800;
-    line-height: 6.5rem;
+    line-height: calc(var(--base-font-size-xxl) * var(--base-line-height-multiplier-1));
   }
 
-  .mc-purpose p {
-    font-size: 4rem;
-    line-height: 6rem;
+  .mc-purpose {
+    font-size: var(--base-font-size-xl);
+    line-height: calc(var(--base-font-size-xl) * var(--base-line-height-multiplier-1));
     font-weight: 700;
+  }
+}
+
+.mc-cycle {
+  display: inline-block;
+  overflow: hidden;
+  max-height: calc(var(--base-font-size-xl) * 1.1);
+
+  .mc-cycle-track {
+    transition: transform var(--base-anim-speed-1);
+    transform: translate3d(0, 0.8rem, 0);
+    transform: translate3d(0, calc(var(--base-font-size-xl) - 3.2rem), 0);
+  }
+
+  .mc-cycle-item {
+    line-height: var(--base-font-size-xl);
+    margin-bottom: 100px;
   }
 }
 
@@ -267,17 +287,13 @@ p:last-child {
 
   .mc-col {
     position: relative;
-    font-size: 1.1rem;
-    line-height: 2.8rem;
+    font-size: var(--base-font-size-m);
+    line-height: var(--base-line-height-multiplier-2);
     padding: var(--base-padding-2) 0;
   }
 
   .mc-title {
     margin-bottom: var(--base-margin-1);
-  }
-
-  p, a {
-    opacity: 0.5;
   }
 }
 
