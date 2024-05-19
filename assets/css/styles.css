@@ -649,7 +649,7 @@ p, a {
 
 .mc-section {
   padding: var(--base-padding-1);
-  min-height: 70vh;
+  min-height: 50vh;
 
   &.mc-visible {
     .mc-article {
