@@ -310,6 +310,12 @@ p, a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .mc-col {
+    flex: 1 0 100%;
+  }
+}
+
 /* XXX-START-EXPERIMENT - just an experiment */
 .mc-theme-2 #mercado-logo-brandmark-tmpl .mc-accent-color-2 {
   fill: var(--base-color-1);
